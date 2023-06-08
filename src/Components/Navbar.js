@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className=' hidden sm:flex justify-around items-center p-5 font-bold z-2'>
+      <nav className=' hidden sm:flex justify-around items-start p-5 font-bold z-2'>
         <Link to="/"><CurrencyBitcoinIcon className=' text-yellow-300' /></Link>
         <p>Home</p>
 
@@ -53,16 +53,15 @@ export default function Navbar() {
       </nav>
       
       {/* FOR SMALL SCREENS */}
-       <nav className='flex items-center justify-between p-2 sm:hidden '>
+       <nav className='flex items-start justify-between p-2 sm:hidden'>
        {/* 1 */}
         <Link to="/"> <CurrencyBitcoinIcon className=' text-yellow-200'/> </Link>
         {/* 2 */}
         <div className='flex flex-col bg-white'> 
-        <input type='text'  onChange={handleSearch} className='border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
-
-         {/* Search Result */}
+        <input type='text'  onChange={handleSearch} className='w-24 s550:w-40 border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
+         {/* DISPLAYING SEARCH RESULT */}
          
-         <span className={`${query=="" ? "hidden" : "flex" } m-2 font-bold flex-col flex-wrap max-w-md `} >
+         <p className={`${query=="" ? "hidden" : "inline" } m-2 font-bold flex-col flex-wrap max-w-md `} >
           {
            searchData!=="" && searchData.map(coin=>
   
@@ -70,13 +69,12 @@ export default function Navbar() {
              
              <Link to={`/details/${coin.uuid}`} >{coin.name}</Link>
 
-           </div>)
+            </div>)
           }
-        </span>
+        </p>
         </div>
         {/* 3 */}
-         <Link to={"/watchList"}><p className='text-sm s550:text-xl text-blue-500 font-bold'>Watch</p></Link>
-         {/* 4 */}
+         <Link to={"/watchList"}><p className='text-sm s550:text-xl text-blue-500 font-bold'>Watching</p></Link>
         <button className='flex items-center max-h-sm' onClick={()=>setShowsidebar(!showsidebar)}>
           {showsidebar ?<CloseIcon/> : <MenuOpenIcon/>}
         </button>
