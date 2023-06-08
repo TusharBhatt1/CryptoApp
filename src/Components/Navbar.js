@@ -59,7 +59,8 @@ export default function Navbar() {
         {/* 2 */}
         <div className='flex flex-col bg-white'> 
         <input type='text'  onChange={handleSearch} className='border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
-         {/* DISPLAYING SEARCH RESULT */}
+
+         {/* Search Result */}
          
          <span className={`${query=="" ? "hidden" : "flex" } m-2 font-bold flex-col flex-wrap max-w-md `} >
           {
@@ -75,6 +76,7 @@ export default function Navbar() {
         </div>
         {/* 3 */}
          <Link to={"/watchList"}><p className='text-sm s550:text-xl text-blue-500 font-bold'>Watch</p></Link>
+         {/* 4 */}
         <button className='flex items-center max-h-sm' onClick={()=>setShowsidebar(!showsidebar)}>
           {showsidebar ?<CloseIcon/> : <MenuOpenIcon/>}
         </button>
