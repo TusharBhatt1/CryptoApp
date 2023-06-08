@@ -64,7 +64,7 @@ const handleSubmit=(e)=>{
      <span><img src={tick} className='h-20 w-20 m-auto bg-blue-800 ' alt='tick'/></span>
       <p className='text-purple-500 text-2xl'>Hello {SignUpDetails.firstName}</p>
       <p className='text-black'>WELCOME</p>
-      <Link to={"/"}><button className='border-2 bg-blue-500 text-white p-3 rounded-md hover:bg-blue-700'>CONTINUE</button></Link>
+      <Link to={"/home"}><button className='border-2 bg-blue-500 text-white p-3 rounded-md hover:bg-blue-700'>CONTINUE</button></Link>
       </div>
       </>
   )

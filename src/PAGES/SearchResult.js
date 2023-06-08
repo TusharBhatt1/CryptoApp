@@ -29,7 +29,7 @@ console.log(alldetails)
     <div className='bg-black text-white'>
     <Navbar/>
     <div className=' h-screen'>
-    <Link to="/">
+    <Link to="/home">
     <button class="bg-blue-500 text-white hover:bg-blue-700  font-semibold py-2 px-4 border border-gray-400 rounded shadow m-2">
     Back</button>
     </Link>
