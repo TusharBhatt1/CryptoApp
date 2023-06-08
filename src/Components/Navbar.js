@@ -58,7 +58,7 @@ export default function Navbar() {
         <Link to="/"> <CurrencyBitcoinIcon className=' text-yellow-200'/> </Link>
         {/* 2 */}
         <div className='flex flex-col bg-white'> 
-        <input type='text'  onChange={handleSearch} className='w-24 s550:w-40 border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
+        <input type='text'  onChange={handleSearch} className='w-24 rounded-lg s550:w-40 border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
          {/* DISPLAYING SEARCH RESULT */}
          
          <p className={`${query=="" ? "hidden" : "inline" } m-2 font-bold flex-col flex-wrap max-w-md `} >

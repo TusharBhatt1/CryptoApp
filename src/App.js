@@ -11,10 +11,11 @@ function App() {
   return (
   <BrowserRouter>
   <Routes>
-  {/* <Route index element={<Authentication/>} /> */}
+  <Route index element={<Authentication/>} />
   <Route path="/login" element={<LogIn/>} /> 
   <Route path="/signin" element={<SignIn/>} /> 
   <Route path='/' element={<Home/>} /> 
+  <Route path='*' element={<Home/>} /> 
   <Route path='/watchlist' element={<WatchList/>}/>
   <Route path="/details/:uuid" element={<SearchResult/>} />
   </Routes>
