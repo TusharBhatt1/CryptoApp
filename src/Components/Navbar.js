@@ -74,7 +74,7 @@ export default function Navbar() {
         </span>
         </div>
         {/* 3 */}
-         <Link to={"/watchList"}><p className='text-sm s550:text-xl text-blue-500 font-bold'>WatchList</p></Link>
+         <Link to={"/watchList"}><p className='text-sm s550:text-xl text-blue-500 font-bold'>Watch</p></Link>
         <button className='flex items-center max-h-sm' onClick={()=>setShowsidebar(!showsidebar)}>
           {showsidebar ?<CloseIcon/> : <MenuOpenIcon/>}
         </button>
