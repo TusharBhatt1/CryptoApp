@@ -32,7 +32,10 @@ export default function Navbar() {
         <p>Home</p>
 
         <div className='bg-white'> 
-        <input type='text'  onChange={handleSearch} className='font-thin border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
+        <div className='flex justify-between items-center p-1'>
+        <input type='text' value={query}  onChange={handleSearch} className='font-thin p-2  text-black' placeholder='  search' />
+        <p onClick={()=>setQuery("")} className={`${query !== "" ? "block" :"hidden"} font-bold text-black p-1 cursor-pointer`}>X</p>
+        </div>
          {/* DISPLAYING SEARCH RESULT */}
          <span className={`${query==="" ? "hidden" : "flex" } abolute flex-col m-2 gap-2 `} >
           {
@@ -56,22 +59,24 @@ export default function Navbar() {
        {/* 1 */}
         <Link to="/home"> <CurrencyBitcoinIcon className=' text-yellow-200'/> </Link>
         {/* 2 */}
-        <div className='flex flex-col bg-white'> 
-        <input type='text'  onChange={handleSearch} className='w-24 rounded-lg s550:w-40 border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
+        <div className='bg-white'> 
+        <div className='flex items-center justify-between'>
+        <input type='text' value={query}  onChange={handleSearch} className='w-24 rounded-lg s550:w-40 border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
+        <p onClick={()=>setQuery("")} className={`${query !== "" ? "block" :"hidden"} font-bold text-black p-1 cursor-pointer`}>X</p>
+        </div>
          {/* DISPLAYING SEARCH RESULT */}
-         
-         <p className={`${query==="" ? "hidden" : "inline" } m-2 font-bold flex-col flex-wrap max-w-md `} >
+         <span className={`${query==="" ? "hidden" : "flex" } abolute flex-col m-2 gap-2 `} >
           {
            searchData!=="" && searchData.map(coin=>
-  
             <div className='flex flex-col text-black' key={coin.uuid}>
              
-             <Link to={`/details/${coin.uuid}`} >{coin.name}</Link>
+            <Link to={`/details/${coin.uuid}`} >{coin.name}</Link>
 
             </div>)
           }
-        </p>
+        </span>
         </div>
+         
         {/* 3 */}
          <Link to={"/watchList"}><p className='text-sm s550:text-xl text-blue-500 font-bold'>Watching</p></Link>
         <button className='flex items-center max-h-sm' onClick={()=>setShowsidebar(!showsidebar)}>
