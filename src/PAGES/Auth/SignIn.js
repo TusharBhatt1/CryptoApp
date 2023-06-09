@@ -43,12 +43,12 @@ const handleSubmit=(e)=>{
         <form className={`${!moveToHome ? "flex" : "hidden"}  p-2 text-center text-xl flex flex-col w-100 m-auto gap-4 text-black`} onSubmit={handleSubmit}>
         <img src={myself} alt='Tushar' className='h-20 z-20 w-20 rounded-full  m-auto'/>
 
-            <header className='text-center text-2xl font-extrabold text-white '>SIGN In</header>
+            <header className='text-center text-2xl font-extrabold text-white '>SIGN IN</header>
             <input className=' p-1 rounded-full border-2 border-grey-100 ' required name='firstName' onChange={handleChange} value={SignUpDetails.firstName}  type='text' placeholder='First Name'/>
             <input className=' p-1 rounded-full border-2 border-grey-100 ' required name='lastName'  onChange={handleChange} value={SignUpDetails.lastName} type='text' placeholder='Last Name'/>
             <input className=' p-1 rounded-full border-2 border-grey-100 ' required name='email' onChange={handleChange} value={SignUpDetails.email} type='email' placeholder='Email'/>
             <input className=' p-1 rounded-full border-2 border-grey-100 ' required name='password'  onChange={handleChange} value={SignUpDetails.password} type='password' placeholder='Password'/>
-            <button type='submit' className='bg-pink-500 hover:bg-pink-700 font-bold text-white tracking-wider rounded-full p-1 w-1/2 mt-2 m-auto'>Sign Up</button>
+            <button type='submit' className='bg-pink-500 hover:bg-pink-700 font-bold text-white tracking-wider rounded-full p-1 w-1/2 mt-2 m-auto'>Sign In</button>
             <p className={`${showWaiting ? "block" :"hidden" } font-bold text-green-500 `}><RefreshIcon className='animate-spin text-white'/></p>
             <p className={`${!showError ? "hidden" :"block" } font-bold text-red-500`}>Retry. No internet or Wrong Details .<br/> Also Password should be of atleast 6 characters</p>
              
