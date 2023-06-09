@@ -1,10 +1,10 @@
-import React ,{useEffect} from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import { removeItem } from '../ReduxStore/Store';
 import Navbar from '../Components/Navbar'
 import { Link } from 'react-router-dom'
-import { Button } from '@mui/material';
+
 
 export default function WatchList() {
 

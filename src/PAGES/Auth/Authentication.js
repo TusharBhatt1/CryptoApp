@@ -3,7 +3,7 @@ import React from 'react'
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import SignUp from "./SignIn"
-import { Link } from 'react-router-dom';
+
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries

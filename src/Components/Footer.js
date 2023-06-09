@@ -1,8 +1,7 @@
 import React from 'react'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import CallIcon from '@mui/icons-material/Call';
-import { Fade } from 'react-slide-fade-in';
+
 export default function News() {
 
   

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
-import SearchIcon from '@mui/icons-material/Search';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
@@ -35,7 +34,7 @@ export default function Navbar() {
         <div className='bg-white'> 
         <input type='text'  onChange={handleSearch} className='font-thin border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
          {/* DISPLAYING SEARCH RESULT */}
-         <span className={`${query=="" ? "hidden" : "flex" } abolute flex-col m-2 gap-2 `} >
+         <span className={`${query==="" ? "hidden" : "flex" } abolute flex-col m-2 gap-2 `} >
           {
            searchData!=="" && searchData.map(coin=>
             <div className='flex flex-col text-black' key={coin.uuid}>
@@ -61,7 +60,7 @@ export default function Navbar() {
         <input type='text'  onChange={handleSearch} className='w-24 rounded-lg s550:w-40 border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
          {/* DISPLAYING SEARCH RESULT */}
          
-         <p className={`${query=="" ? "hidden" : "inline" } m-2 font-bold flex-col flex-wrap max-w-md `} >
+         <p className={`${query==="" ? "hidden" : "inline" } m-2 font-bold flex-col flex-wrap max-w-md `} >
           {
            searchData!=="" && searchData.map(coin=>
   

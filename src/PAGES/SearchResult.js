@@ -33,7 +33,7 @@ console.log(alldetails)
     <button class="bg-blue-500 text-white hover:bg-blue-700  font-semibold py-2 px-4 border border-gray-400 rounded shadow m-2">
     Back</button>
     </Link>
-    {Object.keys(alldetails).length==0 ? <div className='flex justify-center mt-48 '><RefreshIcon className='animate-spin h-20 text-black'/></div> 
+    {Object.keys(alldetails).length===0 ? <div className='flex justify-center mt-48 '><RefreshIcon className='animate-spin h-20 text-black'/></div> 
     :
    <div className=' flex gap-4 s550:gap-10 flex-col font-serif text-center p-4 text-white'>
     <p className='font-bold text text-3xl '>{alldetails.name}</p>

@@ -41,7 +41,7 @@ const handleSubmit=(e)=>{
     <>
     <div className={`${moveToHome ? "hidden" :"flex" } flex-col  h-screen  bg-black text-green-500`}  >
         <form className={`${!moveToHome ? "flex" : "hidden"}  p-2 text-center text-xl flex flex-col w-100 m-auto gap-4 text-black`} onSubmit={handleSubmit}>
-        <img src={myself} className='h-20 z-20 w-20 rounded-full  m-auto'/>
+        <img src={myself} alt='Tushar' className='h-20 z-20 w-20 rounded-full  m-auto'/>
 
             <header className='text-center text-2xl font-extrabold text-white '>SIGN In</header>
             <input className=' p-1 rounded-full border-2 border-grey-100 ' required name='firstName' onChange={handleChange} value={SignUpDetails.firstName}  type='text' placeholder='First Name'/>

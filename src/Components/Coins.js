@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToWatchList } from '../ReduxStore/Store';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 export default function Coins() {
 
