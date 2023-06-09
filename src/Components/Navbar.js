@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <>
       <nav className=' hidden sm:flex justify-around items-start p-5 font-bold z-2'>
-        <Link to="/"><CurrencyBitcoinIcon className=' text-yellow-300' /></Link>
+        <Link to="/home"><CurrencyBitcoinIcon className=' text-yellow-300' /></Link>
         <p>Home</p>
 
         <div className='bg-white'> 
@@ -55,7 +55,7 @@ export default function Navbar() {
       {/* FOR SMALL SCREENS */}
        <nav className='flex items-start justify-between p-2 sm:hidden'>
        {/* 1 */}
-        <Link to="/"> <CurrencyBitcoinIcon className=' text-yellow-200'/> </Link>
+        <Link to="/home"> <CurrencyBitcoinIcon className=' text-yellow-200'/> </Link>
         {/* 2 */}
         <div className='flex flex-col bg-white'> 
         <input type='text'  onChange={handleSearch} className='w-24 rounded-lg s550:w-40 border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
