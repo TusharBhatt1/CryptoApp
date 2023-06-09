@@ -28,14 +28,14 @@ console.log(alldetails)
   return (
     <div className='bg-black text-white'>
     <Navbar/>
-    <div className=' h-screen'>
+    <div className=''>
     <Link to="/home">
     <button class="bg-blue-500 text-white hover:bg-blue-700  font-semibold py-2 px-4 border border-gray-400 rounded shadow m-2">
     Back</button>
     </Link>
     {Object.keys(alldetails).length==0 ? <div className='flex justify-center mt-48 '><RefreshIcon className='animate-spin h-20 text-black'/></div> 
     :
-   <div className='flex gap-10 flex-col font-serif text-center p-4 text-white'>
+   <div className=' flex gap-4 s550:gap-10 flex-col font-serif text-center p-4 text-white'>
     <p className='font-bold text text-3xl '>{alldetails.name}</p>
     <img src={alldetails.iconUrl} className=' max-h-20  max-w-sm  m-auto ' alt={alldetails.name}/>
     <p className='font-semibold '>All Time High : ${alldetails.allTimeHigh.price.slice(0,7)}</p>
