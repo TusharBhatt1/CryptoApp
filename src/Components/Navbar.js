@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className='bg-white'> 
         <div className='flex justify-between items-center p-1'>
         <input type='text' value={query}  onChange={handleSearch} className='font-thin p-2  text-black' placeholder='  search' />
-        <p onClick={()=>setQuery("")} className={`${query !== "" ? "block" :"hidden"} font-bold text-black p-1 cursor-pointer`}>X</p>
+        <p onClick={()=>setQuery("")} className={`${query !== "" ? "block" :"hidden"} font-bold text-black p-1 cursor-pointer`}>x</p>
         </div>
          {/* DISPLAYING SEARCH RESULT */}
          <span className={`${query==="" ? "hidden" : "flex" } abolute flex-col m-2 gap-2 `} >
@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className='bg-white'> 
         <div className='flex items-center justify-between'>
         <input type='text' value={query}  onChange={handleSearch} className='w-24 rounded-lg s550:w-40 border-b-2 border-red-100 p-2  text-black' placeholder='  search' />
-        <p onClick={()=>setQuery("")} className={`${query !== "" ? "block" :"hidden"} font-bold text-black p-1 cursor-pointer`}>X</p>
+        <p onClick={()=>setQuery("")} className={`${query !== "" ? "block" :"hidden"} font-bold text-black p-1 cursor-pointer`}>x</p>
         </div>
          {/* DISPLAYING SEARCH RESULT */}
          <span className={`${query==="" ? "hidden" : "flex" } abolute flex-col m-2 gap-2 `} >
