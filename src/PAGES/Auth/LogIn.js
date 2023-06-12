@@ -37,14 +37,15 @@ const handleSubmit=(e)=>{
   return (
     <>
     <div className={`${moveToHome ? "hidden" : "flex"} bg-black h-screen`}>
-        <form className='flex bg-red-200 flex-col p-4 m-auto gap-5 text-black' onSubmit={handleSubmit}>
-            <input className='p-2 rounder-md ' required name='email' onChange={handleChange} value={loginDetails.email} type='email' placeholder='Email'/>
-            <input className='p-2 rounder-md ' required name='password'  onChange={handleChange} value={loginDetails.password} type='password' placeholder='Password'/>
-            <button type='submit' className='bg-pink-500 rounded-md p-4 text-white mt-4 w-1/2 m-auto'>Log In</button>
+        <form className='flex flex-col p-4 m-auto gap-5 ' onSubmit={handleSubmit}>
+        <header className='text-bold text-center font-extrabold text-2xl text-white font-serif'>LOG IN</header>
+            <input className='p-2 bg-transparent border-b-2  ' required name='email' onChange={handleChange} value={loginDetails.email} type='email' placeholder='Email'/>
+            <input className='p-2 bg-transparent border-b-2 ' required name='password'  onChange={handleChange} value={loginDetails.password} type='password' placeholder='Password'/>
+            <button type='submit' className='bg-pink-500 rounded-full p-2 font-serif tracking-wider font-bold text-white mt-4 w-1/2 m-auto'>Log In</button>
 
              
             <p className={`${!showError ? "hidden" :"block" } font-bold text-red-500`}>User Not Found.</p>
-            <Link className='font-bold text-blue-500 text-center' to={"/signin"} >Sign Up</Link>
+            <Link className='font-bold text-blue-500 text-center ' to={"/signin"} >Sign Up</Link>
         </form>
       </div>
     <div className={`${moveToHome ? "flex" : "hidden"} h-screen bg-red-200 justify-center align-center shadow-blue-100 shadow-md p-10 text-xl flex-col gap-10 font-bold text-center `}>
