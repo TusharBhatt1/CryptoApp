@@ -40,7 +40,7 @@ const handleSubmit=(e)=>{
   return (
     <>
     <div className={`${moveToHome ? "hidden" :"flex" } flex-col  h-screen  bg-black text-green-500`}  >
-        <form className={`${!moveToHome ? "flex" : "hidden"}  p-2 text-center text-xl flex flex-col w-100 m-auto gap-5 text-black`} onSubmit={handleSubmit}>
+        <form className={`${!moveToHome ? "flex" : "hidden"}  p-2 text-center text-xl flex flex-col w-100 m-auto gap-5 text-white`} onSubmit={handleSubmit}>
         <img src={myself} alt='Tushar' className=' h-20 z-20 w-20 rounded-full  m-auto'/>
 
             <header className='text-center text-2xl font-extrabold text-white font-serif '>SIGN IN</header>

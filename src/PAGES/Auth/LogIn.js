@@ -37,7 +37,7 @@ const handleSubmit=(e)=>{
   return (
     <>
     <div className={`${moveToHome ? "hidden" : "flex"} bg-black h-screen`}>
-        <form className='flex flex-col p-4 m-auto gap-5 ' onSubmit={handleSubmit}>
+        <form className='flex flex-col p-4 m-auto gap-5 text-white ' onSubmit={handleSubmit}>
         <header className='text-bold text-center font-extrabold text-2xl text-white font-serif'>LOG IN</header>
             <input className='p-2 bg-transparent border-b-2  ' required name='email' onChange={handleChange} value={loginDetails.email} type='email' placeholder='Email'/>
             <input className='p-2 bg-transparent border-b-2 ' required name='password'  onChange={handleChange} value={loginDetails.password} type='password' placeholder='Password'/>
