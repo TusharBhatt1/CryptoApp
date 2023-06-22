@@ -51,7 +51,7 @@ const handleSubmit=(e)=>{
             <button type='submit' className='bg-pink-500 hover:bg-pink-700 font-bold text-white tracking-wider rounded-full p-1 w-1/2 mt-2 m-auto font-serif'>Sign In</button>
             <p className={`${showWaiting ? "block" :"hidden" } font-bold text-green-500 `}><RefreshIcon className='animate-spin text-white'/></p>
             <p className={`${!showError ? "hidden" :"block" } font-bold text-red-500`}>Retry. No internet or Wrong Details .<br/> Also Password should be of atleast 6 characters</p>
-            <Link className='font-bold text-sm text-blue-500' to={"/home"}>Visit without Login</Link> 
+            <Link className='font-bold text-sm text-blue-500' to={"/home"}>Visit without Signin</Link> 
             {/* ALREADY HAVE AN ACCOUNT */}
 
             <p className=' text-sm text-white'>Already have an account ? <Link className='font-bold text-blue-500' to={"/login"} >Login</Link></p>
